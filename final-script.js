@@ -1,19 +1,8 @@
-/* 
 
-JavaScript Document
-
-TemplateMo 613 Frost Bakery
-
-https://templatemo.com/tm-613-frost-bakery
-
-*/
 
     (function () {
       'use strict';
 
-      /* -------------------------------------------
-         Mobile Menu Toggle
-         ------------------------------------------- */
       const hamburger   = document.getElementById('hamburger');
       const sidebar     = document.getElementById('sidebar');
       const overlay     = document.getElementById('sidebarOverlay');
@@ -24,7 +13,7 @@ https://templatemo.com/tm-613-frost-bakery
         overlay.style.display = 'block';
         hamburger.classList.add('is-active');
         hamburger.setAttribute('aria-expanded', 'true');
-        // Trigger reflow for transition
+    
         requestAnimationFrame(function () {
           overlay.classList.add('is-visible');
         });
@@ -50,7 +39,7 @@ https://templatemo.com/tm-613-frost-bakery
 
       overlay.addEventListener('click', closeMenu);
 
-      // Close mobile menu when a nav link is clicked
+      
       navLinks.forEach(function (link) {
         link.addEventListener('click', function () {
           if (window.innerWidth <= 1024) {
@@ -59,9 +48,7 @@ https://templatemo.com/tm-613-frost-bakery
         });
       });
 
-      /* -------------------------------------------
-         Active Navigation Highlighting on Scroll
-         ------------------------------------------- */
+      
       const sections = document.querySelectorAll('section[id]');
 
       function updateActiveNav() {
@@ -85,10 +72,6 @@ https://templatemo.com/tm-613-frost-bakery
 
       window.addEventListener('scroll', updateActiveNav, { passive: true });
 
-      /* -------------------------------------------
-         Scroll-Triggered Reveal Animations
-         (IntersectionObserver)
-         ------------------------------------------- */
       var revealElements = document.querySelectorAll('.reveal');
 
       if ('IntersectionObserver' in window) {
@@ -108,16 +91,12 @@ https://templatemo.com/tm-613-frost-bakery
           revealObserver.observe(el);
         });
       } else {
-        // Fallback: show all elements immediately
+       
         revealElements.forEach(function (el) {
           el.classList.add('is-visible');
         });
       }
 
-      /* -------------------------------------------
-         Smooth Scroll for Sidebar Links
-         (enhanced for offset with sidebar)
-         ------------------------------------------- */
       document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
           var target = document.querySelector(this.getAttribute('href'));
@@ -130,9 +109,7 @@ https://templatemo.com/tm-613-frost-bakery
         });
       });
 
-      /* -------------------------------------------
-         Seasonal Tabs
-         ------------------------------------------- */
+
       var seasonTabs   = document.querySelectorAll('.seasonal-tab');
       var seasonPanels = document.querySelectorAll('.seasonal-panel');
 
@@ -140,7 +117,6 @@ https://templatemo.com/tm-613-frost-bakery
         tab.addEventListener('click', function () {
           var season = this.getAttribute('data-season');
 
-          // Update tabs
           seasonTabs.forEach(function (t) {
             t.classList.remove('is-active');
             t.setAttribute('aria-selected', 'false');
