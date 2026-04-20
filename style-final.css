@@ -1,22 +1,11 @@
 @charset "utf-8";
-/* 
-
-CSS Document 
-
-TemplateMo 613 Frost Bakery
-
-https://templatemo.com/tm-613-frost-bakery
-
-*/
 
 :root {
-	/* Color Palette — Terracotta */
 	--terracotta: #E07A5F;
 	--cream: #F4F1DE;
 	--navy: #3D405B;
 	--sage: #81B29A;
 
-	/* Extended shades */
 	--terracotta-light: #f0a58e;
 	--terracotta-dark: #c4603f;
 	--cream-dark: #e8e3c8;
@@ -24,33 +13,25 @@ https://templatemo.com/tm-613-frost-bakery
 	--sage-light: #a8cfba;
 	--sage-dark: #5f8e73;
 
-	/* Typography */
 	--font-heading: 'Lora', Georgia, serif;
 	--font-body: 'Manrope', 'Segoe UI', sans-serif;
 
-	/* Spacing */
 	--sidebar-width: 260px;
 	--section-pad: clamp(3rem, 6vw, 6rem);
 	--gap: clamp(1rem, 2.5vw, 2rem);
 
-	/* Borders & Radius */
 	--radius-sm: 8px;
 	--radius-md: 14px;
 	--radius-lg: 24px;
 	--radius-xl: 32px;
 
-	/* Shadows */
 	--shadow-card: 0 4px 24px rgba(61, 64, 91, 0.08);
 	--shadow-hover: 0 8px 40px rgba(61, 64, 91, 0.14);
 
-	/* Transitions */
 	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 	--duration: 0.5s;
 }
 
-/* ============================================
-       Reset & Base
-       ============================================ */
 *,
 *::before,
 *::after {
@@ -280,7 +261,6 @@ button {
 	transform: rotate(-45deg);
 }
 
-/* Mobile overlay */
 .sidebar-overlay {
 	display: none;
 	position: fixed;
@@ -295,17 +275,11 @@ button {
 	opacity: 1;
 }
 
-/* ============================================
-       Main Content Area
-       ============================================ */
 .main {
 	margin-left: var(--sidebar-width);
 	min-height: 100vh;
 }
 
-/* ============================================
-       Scroll-triggered Animation Classes
-       ============================================ */
 .reveal {
 	opacity: 0;
 	transform: translateY(30px);
@@ -957,12 +931,6 @@ button {
 	color: var(--navy-light);
 }
 
-/* ============================================
-       Section: Seasonal Limited Editions
-       ============================================ */
-/* ============================================
-       Section: Seasonal — Interactive Tabs
-       ============================================ */
 .seasonal-tabs {
 	display: flex;
 	gap: 4px;
@@ -1047,7 +1015,6 @@ button {
 	}
 }
 
-/* Left: image visual with overlay */
 .seasonal-panel__visual {
 	position: relative;
 	min-height: 380px;
@@ -1152,7 +1119,6 @@ button {
 	align-self: flex-start;
 }
 
-/* Responsive: Tablet & Mobile */
 @media (max-width: 1024px) {
 	.seasonal-panel.is-active {
 		grid-template-columns: 1fr;
@@ -1183,9 +1149,6 @@ button {
 	}
 }
 
-/* ============================================
-       Section: Loyalty Stamp Card
-       ============================================ */
 .loyalty {
 	background:
 		radial-gradient(ellipse at 30% 70%, rgba(129, 178, 154, 0.1) 0%, transparent 50%),
@@ -1238,7 +1201,6 @@ button {
 	color: var(--navy);
 }
 
-/* Stamp Card Visual */
 .stamp-card {
 	background: #fff;
 	border-radius: var(--radius-xl);
@@ -1324,9 +1286,6 @@ button {
 	text-align: center;
 }
 
-/* ============================================
-       Footer
-       ============================================ */
 .footer {
 	padding: 3rem var(--section-pad) 2rem;
 	background: var(--navy);
@@ -1444,9 +1403,6 @@ button {
 	}
 }
 
-/* ============================================
-       Responsive: Mobile (< 640px)
-       ============================================ */
 @media (max-width: 640px) {
 	.hero {
 		padding-top: 5rem;
