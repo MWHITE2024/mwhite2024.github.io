@@ -457,9 +457,7 @@ button {
 	box-shadow: 0 6px 24px rgba(129, 178, 154, 0.35);
 }
 
-/* ============================================
-       Section Headers (shared)
-       ============================================ */
+
 .section {
 	padding: var(--section-pad);
 }
@@ -1340,9 +1338,7 @@ button {
 	color: var(--terracotta);
 }
 
-/* ============================================
-       Responsive: Tablet (< 1024px)
-       ============================================ */
+
 @media (max-width: 1024px) {
 	:root {
 		--sidebar-width: 0px;
@@ -1376,9 +1372,7 @@ button {
 	}
 }
 
-/* ============================================
-       Responsive: Mobile (< 640px)
-       ============================================ */
+
 @media (max-width: 640px) {
 	.hero {
 		padding-top: 5rem;
@@ -1435,7 +1429,7 @@ button {
 	object-fit: contain;
 }
 
-/* top lock */
+
 .lock1 {
 	top: 0;
 	left: 50%;
@@ -1443,14 +1437,14 @@ button {
 	width: 120px;
 }
 
-/* bottom-left lock */
+
 .lock2 {
 	bottom: 8%;
 	left: 12%;
 	width: 105px;
 }
 
-/* bottom-right lock */
+
 .lock3 {
 	bottom: 8%;
 	right: 12%;
